@@ -1,1 +1,1 @@
-# Squares-Frontend-API
+# Squares project
