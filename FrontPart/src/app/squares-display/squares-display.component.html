@@ -1,0 +1,43 @@
+<div class="page-container">
+  <div class="title-container">
+    <h1>Zakaria's Project</h1>
+  </div>
+
+  <div class="input-container">
+    <mat-form-field appearance="fill">
+      <mat-label>Introduce Min value</mat-label>
+      <input
+        matInput
+        type="number"
+        [(ngModel)]="min"
+        aria-label="Minimum value"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Introduce Max value</mat-label>
+      <input
+        matInput
+        type="number"
+        [(ngModel)]="max"
+        aria-label="Maximum value"
+      />
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="GetSquares()">
+      Get colored squares
+    </button>
+  </div>
+
+  <div *ngIf="squares.length" class="squares-container">
+    <mat-card
+      *ngFor="let square of squares"
+      [ngStyle]="{ 'background-color': square.color }"
+      class="square-card"
+    >
+      <mat-card-content>
+        {{ square.number }}
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

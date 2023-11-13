@@ -1,0 +1,92 @@
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+.page-container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 10px;
+}
+
+.title-container {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 25%;
+  margin-left: 25%;
+  padding: 30px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-20px);
+}
+
+@media (max-width: 768px) {
+  .title-container {
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 20px;
+  }
+
+  .title-container h1 {
+    font-size: 1.5em;
+  }
+}
+
+h1 {
+  margin: 0;
+  color: #3f51b5;
+  font-family: "Arial", sans-serif;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .input-container {
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+
+  .input-container .mat-form-field {
+    width: 90%; /* Adjust width */
+  }
+}
+
+.squares-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.square-card {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+@media (max-width: 768px) {
+  .square-card {
+    width: calc(50% - 16px);
+  }
+}
+
+.mat-form-field {
+  width: 100%;
+  margin: 8px;
+}
+
+button {
+  margin-top: 16px;
+}
+
+.mat-card:not([class*="mat-elevation-z"]) {
+  box-shadow: none;
+}
