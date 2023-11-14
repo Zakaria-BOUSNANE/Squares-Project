@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class SquaresService {
-  private apiUrl = 'https://localhost:7083/Squares';
+  private apiUrl = 'https://localhost:7044/Squares';
 
   constructor(private http: HttpClient) {}
 
